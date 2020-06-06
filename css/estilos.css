@@ -391,15 +391,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #productos article:nth-child(1){
-      background-image: url('/img/portfolio/zapato\ 3.jpg');
+      background-image: url('../img/portfolio/zapato\ 3.jpg');
   }
   
   #productos article:nth-child(2){
-    background-image: url('/img/portfolio/qiloo_2.jfif');
+    background-image: url('../img/portfolio/qiloo_2.jfif');
 }
 
 #productos article:nth-child(3){
-    background-image: url('/img/portfolio/B1tuCScIYAA9Tbu.jfif');
+    background-image: url('../img/portfolio/B1tuCScIYAA9Tbu.jfif');
     background-position: center;
       background-size: cover;
 }
