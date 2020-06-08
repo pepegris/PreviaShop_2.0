@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
  
 
 /* IMAGEN DE FONDO DE LA SECTION HEADER */
-#header{
+#header .conchale{
     background-image: url('/css/inicio_pg_previashop.jpg');
     background-position: center;
     background-size: cover;
