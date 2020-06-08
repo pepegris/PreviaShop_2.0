@@ -109,8 +109,8 @@ h1, h2, h3, h4, h5, h6 {
  
 
 /* IMAGEN DE FONDO DE LA SECTION HEADER */
-#header .conchale{
-    background-image: url('/css/inicio_pg_previashop.jpg');
+#header {
+    background-image: url('../img/zapatos-fondo.jpeg');
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* IMAGEN DE FONDO DE LA SECTION NOSOTROS */
 #nosotros{
-    background-image: url('../img/zapatos-fondo.jpeg');
+    background-image: url('/img/portfolio/Goma\ 2.jfif');
     background-position: center;
     background-size: cover;
    
@@ -391,15 +391,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #productos article:nth-child(1){
-      background-image: url('/img/portfolio/zapato\ 3.jpg');
+      background-image: url('/img/producto-02.jpg');
   }
   
   #productos article:nth-child(2){
-    background-image: url('/img/portfolio/qiloo_2.jfif');
+    background-image: url('/img/producto-03.jpg');
 }
 
 #productos article:nth-child(3){
-    background-image: url('/img/portfolio/B1tuCScIYAA9Tbu.jfif');
+    background-image: url('/img/producto-01.jpg');
     background-position: center;
       background-size: cover;
 }
