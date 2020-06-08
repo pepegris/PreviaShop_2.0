@@ -391,11 +391,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #productos article:nth-child(1){
-      background-image: url('../img/zapatos-fondo.jpeg');
+      background-image: url('../img/producto-02.jpg');
   }
   
   #productos article:nth-child(2){
-    background-image: url('../img/servicio.jpg');
+    background-image: url('../img/producto-03.jpg');
 }
 
 #productos article:nth-child(3){
