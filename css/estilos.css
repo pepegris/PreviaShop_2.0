@@ -444,9 +444,54 @@ h1, h2, h3, h4, h5, h6 {
 
 
 }
+
+
+
+/* TIENDAS */
+
+
+#tiendas{
+    background-image: url('/img/iniciopreviashop.jpg');
+    background-position: center;
+    background-size: cover;
+   
+    
+}
+#tiendas .container{
+    margin: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* REDES SOCIALES */
 footer{
-    background-color: black;
+    background-image: url('../img/prueba/prueba.jpg');
+    background-position: center;
+    background-size: cover;
 }
 footer .texto-redes{
     color: #9147FF;

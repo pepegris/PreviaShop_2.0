@@ -20,7 +20,7 @@ const section_Pagina_fullpage = new fullpage('#fullpage',{
 		 navigation: true, // Muesta la barra de navegación.
 		 menu: '#menu', // Menu de navegación.
 		 anchors: [], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
-		 navigationTooltips: ['Inicio','Nosotros', 'Servicios', 'Productos','Redes'], // Tooltips que mostrara por cada boton.
+		 navigationTooltips: ['Inicio','Nosotros', 'Servicios', 'Productos','Tiendas','Redes'], // Tooltips que mostrara por cada boton.
 		 showActiveTooltip: false, // Mostrar tooltip activa.
     // ──────────────────────────────────────────────────//
     
