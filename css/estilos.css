@@ -465,6 +465,23 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     background-color: white;
 }
+#tiendas .container a{
+    display: inline-block;
+}
+#tiendas .container h3{
+    display: inline-block;
+    color: black;
+}
+#tiendas .container h3:hover{
+    
+    color: #9147FF;
+}
+#tiendas .tienda{
+    border: solid black;
+    text-align: center;
+    padding: 5px;
+}
+
 
  
 
