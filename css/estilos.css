@@ -486,6 +486,27 @@ h1, h2, h3, h4, h5, h6 {
     color: #9147FF;
 }
 
+#tiendas .container{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#tiendas iframe{
+    display: inline;
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    border: solid black;
+}
+#tiendas .fas{
+    color:#5606ce ;
+}
+#tiendas h3:hover{
+    cursor: pointer;
+
+}
+
 
 
  
