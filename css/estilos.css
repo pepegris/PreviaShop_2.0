@@ -479,7 +479,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #tiendas .container h3{
     display: inline-block;
-    color: black;
+    color: #fff;
 }
 #tiendas .container h3:hover{
     
@@ -490,14 +490,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 30%;
     margin-right: 30%;
 }
-#tiendas iframe{
+#tiendas #contain_mapa iframe{
     display: inline;
     height: 250px;
     width: 300px;
-    position: absolute;
+    position: absolute; 
     top: 5px;
     right: 20px;
-    border: solid black;
+    border: solid  ;
+    border-radius: 20px;
 }
 #tiendas .fas{
     color:#5606ce ;
@@ -505,6 +506,13 @@ h1, h2, h3, h4, h5, h6 {
 #tiendas h3:hover{
     cursor: pointer;
 
+}
+#tiendas .bloque_uno{
+    display: inline-block;
+
+}
+#tiendas .bloque_dos{
+    display: inline-block;
 }
 
 
