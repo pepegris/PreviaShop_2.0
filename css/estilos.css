@@ -314,6 +314,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #111;
     
   }
+  #servicios .ntitle a {
+    color: #fff;
+    
+  }
   
   #servicios .box:hover .title a {
     color: #9147ff;
@@ -376,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 100px 15px 100px;
         background-color: rgba(22, 33, 43, 0);
         border-radius: 10px;
-        color:#9147ff;
+        color:red;
     }
   }
 
@@ -458,13 +462,18 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 #tiendas .container{
-    margin: auto;
-    margin-left: 30%;
-    margin-right: 30%;
-    border: solid black;
+   
+    
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
-    background-color: white;
+    margin: 0 10px 40px 10px;
+    background: rgba(22, 33, 43, 0.493);
+    box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
+    transition: all 0.3s ease-in-out;
 }
+
 #tiendas .container a{
     display: inline-block;
 }
@@ -476,11 +485,7 @@ h1, h2, h3, h4, h5, h6 {
     
     color: #9147FF;
 }
-#tiendas .tienda{
-    border: solid black;
-    text-align: center;
-    padding: 5px;
-}
+
 
 
  
