@@ -2,6 +2,7 @@ function con(params) {
 
 //pantalla mapa
 var contenido_mapa=document.getElementById('contain_mapa');
+var contenido_mapa_dos=document.getElementById('contain_mapa');
     
 //tiendas
 var sabana=document.getElementById('sabana');
@@ -20,8 +21,8 @@ var matur=document.getElementById('matur');
     var ojena=document.getElementById('ojena');
     var catica=document.getElementById('catica');
     var apure=document.getElementById('apure');
-    var corina=document.getElementById('corina');
-    var nachari=document.getElementById('nachari');
+   /*  var corina=document.getElementById('corina');
+    var nachari=document.getElementById('nachari'); */
     
 
 
@@ -84,25 +85,25 @@ const mapa_matur='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1
 
     //FUNCIONES SEGUNDA LINEA
     sabanados.onclick=function (params) {
-        contenido_mapa.innerHTML=mapa_sabdos;
+        contenido_mapa_dos.innerHTML=mapa_sabdos;
     }
     valena.onclick=function (params) {
-        contenido_mapa.innerHTML=mapa_valena;
+        contenido_mapa_dos.innerHTML=mapa_valena;
 
     }
 
     ojena.onclick=function (params) {
-        contenido_mapa.innerHTML=mapa_ojen;
+        contenido_mapa_dos.innerHTML=mapa_ojen;
     }
     catica.onclick=function (params) {
-        contenido_mapa.innerHTML=mapa_cati;
+        contenido_mapa_dos.innerHTML=mapa_cati;
 
     }
     trina.onclick=function (params) {
-        contenido_mapa.innerHTML=mapa_trina;
+        contenido_mapa_dos.innerHTML=mapa_trina;
     }
     apure.onclick=function (params) {
-        contenido_mapa.innerHTML=mapa_apur;
+        contenido_mapa_dos.innerHTML=mapa_apur;
 
     }
 
