@@ -455,12 +455,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #tiendas{
-    background-image: url('/img/iniciopreviashop.jpg');
+    background-image: url('../img/iniciopreviashop.jpg');
     background-position: center;
     background-size: cover;
    
     
 }
+#tiendas .flex{
+    padding-top: 300px;
+}
+
 #tiendas .container{
    
     
@@ -473,6 +477,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
     transition: all 0.3s ease-in-out;
 }
+
 
 #tiendas .container a{
     display: inline-block;
@@ -515,6 +520,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 #tiendas .tienda_cel{
+    display: inline;
     display: none;
 }
 @media(max-width: 1800px){
@@ -540,6 +546,7 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width: 500px){
     #tiendas .tienda_cel{
         display: inline-block;
+        margin-top: 10px;
     }
     #tiendas .bloque_dos{
         display: inline-block;
@@ -553,14 +560,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     #tiendas .container{
-        display: flex;
-        flex-direction: row;
+        
         padding-bottom: 130px;
         
         
     }
-    #tiendas #pruebat{
+    #tiendas .flex{
         display: none;
+    }
+    #tiendas .tienda_cel h1{
+        position: absolute;
+        right: 39px;
+        top: 90px;
+        
+        
+
     }
     
 }
