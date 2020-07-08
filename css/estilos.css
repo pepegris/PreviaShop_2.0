@@ -407,23 +407,23 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
       background-size: cover;
 }
-#productos .slide .informacion-productos{
+#productos #slide_p .informacion-productos{
     margin: 0 30px;
 }
-#productos .slide .informacion-productos .modelo{
+#productos #slide_p .informacion-productos .modelo{
     font-size: 45px;
     color: white;
 }
-#productos .slide .informacion-productos .descripcion{
+#productos #slide_p .informacion-productos .descripcion{
     font-size: 23px;
     color: white;
 }
 
-#productos .slide .informacion-productos .precio{
+#productos #slide_p .informacion-productos .precio{
     font-size: 25px;
     color: white;
 }
-#productos .slide .informacion-productos .precio::before{
+#productos #slide_p .informacion-productos .precio::before{
     content: '$';
     display: inline-block;
 
@@ -513,6 +513,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 #tiendas .bloque_dos{
     display: inline-block;
+}
+#tiendas .tienda_cel{
+    display: none;
+}
+@media(max-width: 1800px){
+    #tiendas #contain_mapa iframe{
+        width: 200px;
+        height: 250px;
+       
+    }
+
+}
+@media(max-width: 1500px){
+    #tiendas .bloque_dos{
+        display: none;
+    }
+}
+@media(max-width: 1000px){
+    #tiendas .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+@media(max-width: 500px){
+    #tiendas .tienda_cel{
+        display: inline-block;
+    }
+    #tiendas .bloque_dos{
+        display: inline-block;
+    }
+    #tiendas #contain_mapa iframe{
+        width: 280px;
+        height: 120px;
+        top: 235px;
+        left: 5px;
+        
+    }
+    
+    #tiendas .container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 130px;
+        
+        
+    }
+    #tiendas #pruebat{
+        display: none;
+    }
+    
 }
 
 
