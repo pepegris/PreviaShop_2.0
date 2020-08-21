@@ -1,27 +1,27 @@
 function con(params) {
 
 //pantalla mapa
-var contenido_mapa=document.getElementById('contain_mapa');
+const contenido_mapa=document.getElementById('contain_mapa');
 
     
 //tiendas
-var sabana=document.getElementById('sabana');
-var acari=document.getElementById('acari');
-var turme=document.getElementById('turme');
-var pufijo=document.getElementById('pufijo');
-var valle=document.getElementById('valle');
-var puecruz=document.getElementById('puecruz');
-var higue=document.getElementById('higue');
-var matur=document.getElementById('matur');
+const sabana=document.getElementById('sabana');
+const acari=document.getElementById('acari');
+const turme=document.getElementById('turme');
+const pufijo=document.getElementById('pufijo');
+const valle=document.getElementById('valle');
+const puecruz=document.getElementById('puecruz');
+const higue=document.getElementById('higue');
+const matur=document.getElementById('matur');
 
     //tiendas segunda linea
     
-    var valena=document.getElementById('valena');
-    var trina=document.getElementById('trina');
-    var sabanados=document.getElementById('sabandos');
-    var ojena=document.getElementById('ojena');
-    var catica=document.getElementById('catica');
-    var apure=document.getElementById('apure');
+    const valena=document.getElementById('valena');
+    const trina=document.getElementById('trina');
+    const sabanados=document.getElementById('sabandos');
+    const ojena=document.getElementById('ojena');
+    const catica=document.getElementById('catica');
+    const apure=document.getElementById('apure');
    /*  var corina=document.getElementById('corina');
     var nachari=document.getElementById('nachari'); */
     
