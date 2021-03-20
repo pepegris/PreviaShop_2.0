@@ -461,6 +461,14 @@ h1, h2, h3, h4, h5, h6 {
    
     
 }
+#tiendas h1{
+   padding-top: 50px;
+}
+#tiendas .container {
+    margin: 100px;
+    background-color: red;
+
+}
 
 
  
