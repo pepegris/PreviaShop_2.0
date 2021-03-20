@@ -246,56 +246,200 @@
 				<!--TIENDAS-->
 			 	<section class="section" id="tiendas">
 					
-					<div class="tienda">
 
+
+
+				
+					<div class="flex">
 						<h1 class="texto-blanco">Visita Nuestras <span class="texto-lila">Tiendas</span></h1>
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<h3 class="texto-blanco">Región <span class="texto-lila">Central</span></h3>
-
-
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="sabana" v-on:click="sabana" >Sabana Grande</h3></a>
-								</div>
-
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="acari" v-on:click="acari">Sabana Grande 2</h3></a>
-								</div>
-
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="turme"v-on:click="turme">Valencia</h3></a>
-								</div>
-
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="pufijo" v-on:click="pufijo">Catica</h3></a>
-								</div>
-								
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="valle" v-on:event="valle">Apura</h3></a>
-								</div>
-
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="puecruz" v-on:click="puecruz">Cagua</h3></a>
-								</div>
-
-								<div class="tienda">
-									<a ><i class="fas fa-store-alt"></i></a>
-									<a ><h3 id="higue" v-on:click="higue">Turmero</h3></a>
-								</div>
-
-								
+				
+						<div class="container" id="pruebat">
+							<!-- primera linea -->
+							
+						<div class="bloque_uno">
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="sabana" v-on:click="sabana" >Sabana Grande</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="acari" v-on:click="acari">Acarigua</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="turme"v-on:click="turme">Turmero</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="pufijo" v-on:click="pufijo">Punto Fijo</h3></a>
+							</div>
+							
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="valle" v-on:event="valle">Valle la Pascua</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="puecruz" v-on:click="puecruz">Puerto la Cruz</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="higue" v-on:click="higue">Higuerote</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="matur" v-on:click="matur">Maturin</h3></a>
 							</div>
 						</div>
+						
+						<!-- segunda linea -->
+						<div  class="bloque_dos">
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="sabanados" v-on:click="sabanados" >Sabana Grande 2</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="valena" v-on:click="valena" >Valencia</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="ojena" v-on:click="ojena">Ciudad Ojeda</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="catica" v-on:click="catica">Catia</h3></a>
+							</div>
+						
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="trina" v-on:click="trina">La Trinidad</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="apure" v-on:click="apure">Apure</h3></a>
+							</div>
+							 <div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="corina" v-on:click="corina">Corina</h3></a>
+							</div>
+							<div class="tienda">
+								<a ><i class="fas fa-store-alt"></i></a>
+								<a ><h3 id="nachari" v-on:click="nachari">Nachari</h3></a>
+							</div> 
+						</div>
+						
+						<div id="contain_mapa" v-html="contenido_mapa">
+				
+						</div>
+						</div>
+				</div>
+						<div class="tienda_cel">
+							<h1 class="texto-blanco">Visita Nuestras <span class="texto-lila">Tiendas</span></h1>
 
-					</div>
+
+							<!-- 1 ESTILO TIENDA PARA CELULAR -->
+						<article class="slide">
+							
+								<div class="container">
+									<!-- primera linea -->
+									
+									<div class="bloque_uno">
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="sabana" v-on:click="sabana" >Sabana Grande</h3></a>
+										</div>
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="acari" v-on:click="acari">Acarigua</h3></a>
+										</div>
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="turme"v-on:click="turme">Turmero</h3></a>
+										</div>
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="pufijo" v-on:click="pufijo">Punto Fijo</h3></a>
+										</div>
+										
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="valle" v-on:event="valle">Valle la Pascua</h3></a>
+										</div>
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="puecruz" v-on:click="puecruz">Puerto la Cruz</h3></a>
+										</div>
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="higue" v-on:click="higue">Higuerote</h3></a>
+										</div>
+										<div class="tienda">
+											<a ><i class="fas fa-store-alt"></i></a>
+											<a ><h3 id="matur" v-on:click="matur">Maturin</h3></a>
+										</div>
+									</div>
+								
+								
+								
+								<div id="contain_mapa" v-html="contenido_mapa">
+			 
+								</div>
+								</div>
+	
+							</div>
+	
+						</article>
+						<!-- 2 -->
+						<article class="slide">
+							
+								<div class="container">
+							
+								
+								<!-- segunda linea -->
+								<div  class="bloque_dos">
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="sabanados" v-on:click="sabanados" >Sabana Grande 2</h3></a>
+									</div>
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="valena" v-on:click="valena" >Valencia</h3></a>
+									</div>
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="ojena" v-on:click="ojena">Ciudad Ojeda</h3></a>
+									</div>
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="catica" v-on:click="catica">Catia</h3></a>
+									</div>
+								
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="trina" v-on:click="trina">La Trinidad</h3></a>
+									</div>
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="apure" v-on:click="apure">Apure</h3></a>
+									</div>
+									 <div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="corina" v-on:click="corina">Corina</h3></a>
+									</div>
+									<div class="tienda">
+										<a ><i class="fas fa-store-alt"></i></a>
+										<a ><h3 id="nachari" v-on:click="nachari">Nachari</h3></a>
+									</div> 
+								</div>
+								
+								<div id="contain_mapa" v-html="contenido_mapa">
+			 
+								</div>
+								</div>
+						</article>
+				
+						</div>
 
 
 

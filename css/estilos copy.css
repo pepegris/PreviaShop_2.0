@@ -461,6 +461,127 @@ h1, h2, h3, h4, h5, h6 {
    
     
 }
+#tiendas .flex{
+    padding-top: 300px;
+}
+
+#tiendas .container{
+   
+    
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: rgba(22, 33, 43, 0.493);
+    box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
+    transition: all 0.3s ease-in-out;
+}
+
+
+#tiendas .container a{
+    display: inline-block;
+}
+#tiendas .container h3{
+    display: inline-block;
+    color: #fff;
+}
+#tiendas .container h3:hover{
+    
+    color: #9147FF;
+}
+
+#tiendas .container{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#tiendas #contain_mapa iframe{
+    display: inline;
+    height: 250px;
+    width: 300px;
+    position: absolute; 
+    top: 5px;
+    right: 20px;
+    border: solid  ;
+    border-radius: 20px;
+}
+#tiendas .fas{
+    color:#5606ce ;
+}
+#tiendas h3:hover{
+    cursor: pointer;
+
+}
+#tiendas .bloque_uno{
+    display: inline-block;
+
+}
+#tiendas .bloque_dos{
+    display: inline-block;
+}
+#tiendas .tienda_cel{
+    display: inline;
+    display: none;
+}
+@media(max-width: 1800px){
+    #tiendas #contain_mapa iframe{
+        width: 200px;
+        height: 250px;
+       
+    }
+
+}
+@media(max-width: 1500px){
+    #tiendas .bloque_dos{
+        display: none;
+    }
+}
+@media(max-width: 1000px){
+    #tiendas .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+@media(max-width: 500px){
+    #tiendas .tienda_cel{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    #tiendas .bloque_dos{
+        display: inline-block;
+    }
+    #tiendas #contain_mapa iframe{
+        width: 280px;
+        height: 120px;
+        top: 235px;
+        left: 5px;
+        
+    }
+    
+    #tiendas .container{
+        
+        padding-bottom: 130px;
+        
+        
+    }
+    #tiendas .flex{
+        display: none;
+    }
+    #tiendas .flex #slider{
+        display: none;
+    }
+    #tiendas .tienda_cel h1{
+        position: absolute;
+        right: 39px;
+        top: 90px;
+        
+        
+
+    }
+    
+}
+
 
 
  
