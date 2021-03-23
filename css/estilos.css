@@ -465,10 +465,48 @@ h1, h2, h3, h4, h5, h6 {
    padding-top: 50px;
 }
 #tiendas .container {
-    margin: 100px;
-    background-color: red;
-
+        
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: rgba(22, 33, 43, 0.493);
+    box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
+    transition: all 0.3s ease-in-out;
 }
+#tiendas .container h2{
+    margin-bottom: 25px;
+}
+#tiendas .container a{
+    display: inline-block;
+}
+#tiendas .container h3{
+    display: inline-block;
+    color: #fff;
+}
+#tiendas .container h3:hover{
+    
+    color: #9147FF;
+}
+#tiendas .container{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#tiendas .fas{
+    color:#5606ce ;
+}
+#tiendas #contain_mapa iframe{
+    display: inline;
+    height: 210px;
+    width: 260px;
+    position: absolute; 
+    bottom: 5px;
+    right: 20px;
+    border: solid  ;
+    border-radius: 20px;
+}
+.
 
 
  
