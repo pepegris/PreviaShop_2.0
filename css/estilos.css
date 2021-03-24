@@ -496,19 +496,93 @@ h1, h2, h3, h4, h5, h6 {
 #tiendas .fas{
     color:#5606ce ;
 }
-#tiendas #contain_mapa iframe{
+#tiendas img{
     display: inline;
     height: 210px;
     width: 260px;
     position: absolute; 
     bottom: 5px;
     right: 20px;
-    border: solid  ;
+    
     border-radius: 20px;
 }
-.
+#tiendas #contain_mapa iframe{
+    display: inline;
+    height: 210px;
+    width: 320px;
+    position: absolute; 
+    bottom: 20px;
+    right: 35%;
+    border: solid ;
+    border-radius: 20px;
+}
+/* SESION PARA TELEFONO */
+
+#tiendas #slide_cel{
+    display: none;
+}
 
 
+@media(max-width: 1800px){
+    
+
+}
+@media(max-width: 1500px){
+   
+}
+@media(max-width: 1000px){
+    #tiendas .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+@media(max-width: 500px){
+    #tiendas .container{
+        margin-left: 20%;
+        margin-right: -55%;
+    }
+
+    
+  
+    #tiendas #slide_pc{
+        display: none;
+    }
+    #tiendas #pc #h1{
+        display: none;
+        
+
+    }
+    #tiendas #slide_cel{
+        display: inline;
+       }
+   
+    #tiendas #cel h1{
+        position: absolute;
+        right: 90px;
+        top: 90px;
+        
+        
+
+    }
+    #tiendas #contain_mapa iframe{
+        display: inline;
+        height: 210px;
+        width: 320px;
+        position: absolute; 
+        bottom: 40px;
+        right: 15%;
+        border: solid  ;
+        border-radius: 20px;
+    }
+    
+  
+    
+}
+
+
+
+ 
  
 
 
@@ -531,7 +605,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* REDES SOCIALES */
-footer{
+footer {
     background-image: url('../img/prueba/prueba.jpg');
     background-position: center;
     background-size: cover;
