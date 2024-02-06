@@ -7,18 +7,20 @@
 }
 
 body { 
-    font-family: 'Lato', sans-serif;
+    font-family: 'Arimo', sans-serif;
     font-size: 18px;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
     text-align: center;
     margin-bottom: 0;
 }
 
 .texto-lila {
     font-weight: 450;
-    color: #9147FF;
+    color: #FE0000;
 }
 
 .texto-blanco {
@@ -34,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ICONO DE TRASLADAR PARA ABAJO */
 #icono{
     font-weight: 700;
-    color: #9147FF;
+    color: #FE0000;
 
 }
 #icono{
@@ -55,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  /* ESTILO PARA EL FULL PAGE*/
  #fp-nav ul li a span{
-     background:#9147FF ;
+     background:#FE0000 ;
  }
 
  /* MENU DEL NAVEGADOR */
@@ -67,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
      z-index: 70;
      width: 100%;
      margin: 0;
-     padding: 10px 20px;
+     background-color: #fff;
  }
  .navegador li,
  .navegador a{
@@ -75,44 +77,70 @@ h1, h2, h3, h4, h5, h6 {
      margin: 5px;
      text-decoration: none;
      text-transform: uppercase;
-     font-family: 'Oswal', sans-serif;
+     font-family: 'Arimo', sans-serif;
      font-size: 19px;
-     color: white;
+     color: black;
      transition: .5s ease;
  }
  .navegador li,
  .navegador a:hover{
-     color:#9147FF ;
+     color:#FE0000 ;
  }
+ .navegador li .promo{
+
+    background-color:#FE0000  ;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px ;
+    font-style: italic;
+
+ }
+ .navegador li .promo:hover{
+    color:#FFFF00 ;
+}
 .logo{
-     height: 80px;
-     width: 80px;
-     border-radius: 40px ;
-     box-shadow: 2px 2px 2px rgb(51, 51, 51);
+     height: 90px;
+     width: 120px;
+     /* border-radius: 40px ; */
+     /* box-shadow: 2px 2px 2px rgb(51, 51, 51); */
  }
- @media (max-width: 900px){
-    .navegador .sitio{
+ @media (max-width: 963px){
+    .navegador .promo{
          display: none;
          
      }
-     .navegador li,
+
+/*      .navegador li,
  .navegador a{
      margin: 0px;
-
+ */
+ 
  }
- .navegador #menu{
+
+ @media (max-width: 630px){
+    .navegador #menu{
     
-    display: none;
-}
+        display: none;
+    }
+    .navegador .logo{
+        height: 85px;
+        width: 100px;
+
+        
+    }
+    .navegador{
+        background-color: #ffffff00;
+    }
+
  
  }
  
 
 /* IMAGEN DE FONDO DE LA SECTION HEADER */
 #header {
-    background-image: url('../img/zapatos-fondo.jpeg');
+/*     background-image: url('../img/zapatos-fondo.jpeg');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     text-align: center;
 
 
@@ -121,20 +149,66 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 55px;
     text-transform: uppercase;
 }
-/* VIDEO PROMOCIONAL */
-/* .bg-video{
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background: black;
+
+  /* IMAGENES DE HEADER */
+  #header article{
     background-position: center;
-    background-size: contain;
-    object-fit: cover;
-} */
+    background-size: cover;
+    
+
+}
+
+#header article:nth-child(1){
+    background-image: url('../img/header/inicio.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#header article:nth-child(2){
+  background-image: url('../img/header/inicio2.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#header article:nth-child(3){
+  background-image: url('../img/producto-01.jpg');
+  background-position: center;
+    background-size: cover;
+}
+#header #slide_p .informacion-header{
+  margin: 0 30px;
+}
+#header #slide_p .informacion-header .modelo{
+  font-size: 45px;
+  color: white;
+}
+#header #slide_p .informacion-header .descripcion{
+  font-size: 23px;
+  color: white;
+}
+
+@media (max-width: 900px){
+    #header article:nth-child(1){
+        background-image: url('../img/header/inicio.png');
+        width: 100%;
+        height: auto;
+    }
+    
+    #header article:nth-child(2){
+      background-image: url('../img/header/inicio2.png');
+      width: 100%;
+      height: auto;
+    }
+    
+    #header article:nth-child(3){
+      background-image: url('../img/producto-01.jpg');
+      width: 100%;
+      height: auto;
+    }
+ 
+ }
+
+
 
 /* IMAGEN DE FONDO DE LA SECTION NOSOTROS */
 #nosotros{
@@ -180,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 #nosotros span{
-    color: #9147FF;
+    color: #FE0000;
     font-size: 19px;
     font-weight: 800;
     
@@ -258,22 +332,17 @@ h1, h2, h3, h4, h5, h6 {
 /* SETCION DE servicio */
 
 
-#servicios{
-    background-image: url('../img/servicio.jpg');
-    background-position: center;
-    background-size: cover;
-   
-    
+#new_modelos{
+    background-color: #fff;
     overflow: hidden;
     
 }
-#servicios a{
+#new_modelos a{
     text-decoration: none;
 }
 
-
   
-  #servicios .box {
+  #new_modelos .box {
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -284,24 +353,24 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease-in-out;
   }
   
-  #servicios .box:hover {
+  #new_modelos .box:hover {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
   
-  #servicios .icon {
+  #new_modelos .icon {
     position: absolute;
     left: -10px;
     top: calc(50% - 32px);
   }
   
-  #servicios .icon i {
+  #new_modelos .icon i {
     font-size: 64px;
     line-height: 1;
     transition: 0.5s;
   }
   
-  #servicios .title {
+  #new_modelos .title {
     margin-left: 40px;
     font-weight: 700;
     margin-bottom: 15px;
@@ -310,29 +379,33 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
   
-  #servicios .title a {
+  #new_modelos .title a {
     color: #111;
     
   }
-  #servicios .ntitle a {
+  #new_modelos .ntitle a {
     color: #fff;
     
   }
   
-  #servicios .box:hover .title a {
-    color: #9147ff;
+  #new_modelos .box:hover .title a {
+    color: #FE0000;
   }
   
-  #servicios .description {
+  #new_modelos .description {
     font-size: 14px;
     margin-left: 40px;
     line-height: 24px;
     margin-bottom: 0;
-   
+    text-align: justify;
+    word-break: break-word;
+    line-break: normal;
+    hyphens: auto;
+    overflow-wrap: break-word;
     color: #fff;
   }
 
-  #servicios .row{
+  #new_modelos .row{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -353,11 +426,11 @@ h1, h2, h3, h4, h5, h6 {
       display: none;
   }
   @media (max-width:1000px){
-      #servicios #intro{
+      #new_modelos #intro{
           display: none;
           
       }
-      #servicios #servicio .box{
+      #new_modelos #servicio .box{
           display: none;
       }
       #cell{
@@ -372,7 +445,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   @media (min-width:1200px){
-    #servicios #intro{
+    #new_modelos #intro{
         display: none;
         
     }
@@ -433,18 +506,20 @@ h1, h2, h3, h4, h5, h6 {
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev{
     
-    top: 70%;
+    top: 68%;
+    background-color: rgba(0, 0, 0, 0.493);
+    box-shadow: 0 10px 29px 0 rgb(0, 0, 0);
    
 }
 .fp-controlArrow.fp-prev{
     border-width: 20px 20px 20px 0;
-    background-color: transparent #9147FF transparent transparent;
+    background-color: transparent #FE0000 transparent transparent;
     
 
 }
 .fp-controlArrow.fp-next{
     border-width: 20px 0 20px 20px ;
-    background-color: transparent  transparent transparent #9147FF;
+    background-color: transparent  transparent transparent #FE0000;
 
 
 }
@@ -461,13 +536,11 @@ h1, h2, h3, h4, h5, h6 {
    
     
 }
-#tiendas .flex{
-    padding-top: 300px;
+#tiendas h1{
+   padding-top: 50px;
 }
-
-#tiendas .container{
-   
-    
+#tiendas .container {
+        
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -477,8 +550,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
     transition: all 0.3s ease-in-out;
 }
-
-
+#tiendas .container h2{
+    margin-bottom: 25px;
+}
 #tiendas .container a{
     display: inline-block;
 }
@@ -488,53 +562,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 #tiendas .container h3:hover{
     
-    color: #9147FF;
+    color: #FE0000;
 }
-
 #tiendas .container{
     margin-left: 30%;
     margin-right: 30%;
 }
-#tiendas #contain_mapa iframe{
-    display: inline;
-    height: 250px;
-    width: 300px;
-    position: absolute; 
-    top: 5px;
-    right: 20px;
-    border: solid  ;
-    border-radius: 20px;
-}
 #tiendas .fas{
     color:#5606ce ;
 }
-#tiendas h3:hover{
-    cursor: pointer;
-
-}
-#tiendas .bloque_uno{
-    display: inline-block;
-
-}
-#tiendas .bloque_dos{
-    display: inline-block;
-}
-#tiendas .tienda_cel{
+#tiendas img{
     display: inline;
+    height: 210px;
+    width: 260px;
+    position: absolute; 
+    bottom: 5px;
+    right: 20px;
+    
+    border-radius: 20px;
+}
+#tiendas #contain_mapa iframe{
+    display: inline;
+    height: 210px;
+    width: 320px;
+    position: absolute; 
+    bottom: 20px;
+    right: 35%;
+    border: solid ;
+    border-radius: 20px;
+}
+/* SESION PARA TELEFONO */
+
+#tiendas #slide_cel{
     display: none;
 }
+
+
 @media(max-width: 1800px){
-    #tiendas #contain_mapa iframe{
-        width: 200px;
-        height: 250px;
-       
-    }
+    
 
 }
 @media(max-width: 1500px){
-    #tiendas .bloque_dos{
-        display: none;
-    }
+   
 }
 @media(max-width: 1000px){
     #tiendas .container{
@@ -544,46 +613,51 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 @media(max-width: 500px){
-    #tiendas .tienda_cel{
-        display: inline-block;
-        margin-top: 10px;
-    }
-    #tiendas .bloque_dos{
-        display: inline-block;
-    }
-    #tiendas #contain_mapa iframe{
-        width: 280px;
-        height: 120px;
-        top: 235px;
-        left: 5px;
-        
-    }
-    
     #tiendas .container{
-        
-        padding-bottom: 130px;
-        
-        
+        margin-left: 20%;
+        margin-right: -55%;
     }
-    #tiendas .flex{
+
+    
+  
+    #tiendas #slide_pc{
         display: none;
     }
-    #tiendas .flex #slider{
+    #tiendas #pc #h1{
         display: none;
+        
+
     }
-    #tiendas .tienda_cel h1{
+    #tiendas #slide_cel{
+        display: inline;
+       }
+   
+    #tiendas #cel h1{
         position: absolute;
-        right: 39px;
+        right: 90px;
         top: 90px;
         
         
 
     }
+    #tiendas #contain_mapa iframe{
+        display: inline;
+        height: 210px;
+        width: 320px;
+        position: absolute; 
+        bottom: 40px;
+        right: 15%;
+        border: solid  ;
+        border-radius: 20px;
+    }
+    
+  
     
 }
 
 
 
+ 
  
 
 
@@ -606,13 +680,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* REDES SOCIALES */
-footer{
+footer {
     background-image: url('../img/prueba/prueba.jpg');
     background-position: center;
     background-size: cover;
 }
 footer .texto-redes{
-    color: #9147FF;
+    color: #FE0000;
     font-size: 40px;
     letter-spacing: 2px;
     margin-bottom: 40px;
