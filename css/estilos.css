@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FE0000;
 }
 
-.texto-lila {
+.texto-rojo {
     font-weight: 450;
     color: #FE0000;
 }
@@ -151,190 +151,11 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-  /* IMAGENES DE HEADER */
-  #header article{
-    background-position: center;
-    background-size: cover;
-    
-
-}
-
-#header article:nth-child(1){
-    background-image: url('../img/header/inicio.png');
-    background-position: center;
-    background-size: cover;
-}
-
-#header article:nth-child(2){
-  background-image: url('../img/header/inicio2.png');
-  background-position: center;
-  background-size: cover;
-}
-
-#header article:nth-child(3){
-  background-image: url('../img/producto-01.jpg');
-  background-position: center;
-    background-size: cover;
-}
-#header #slide_p .informacion-header{
-  margin: 0 30px;
-}
-#header #slide_p .informacion-header .modelo{
-  font-size: 45px;
-  color: white;
-}
-#header #slide_p .informacion-header .descripcion{
-  font-size: 23px;
-  color: white;
-}
-
-@media (max-width: 900px){
-    #header article:nth-child(1){
-        background-image: url('../img/header/inicio.png');
-        width: 100%;
-        height: auto;
-    }
-    
-    #header article:nth-child(2){
-      background-image: url('../img/header/inicio2.png');
-      width: 100%;
-      height: auto;
-    }
-    
-    #header article:nth-child(3){
-      background-image: url('../img/producto-01.jpg');
-      width: 100%;
-      height: auto;
-    }
- 
- }
 
 
 
-/* IMAGEN DE FONDO DE LA SECTION NOSOTROS */
-#nosotros{
-    background-image: url('../img/zapatos-fondo.jpeg');
-    background-position: center;
-    background-size: cover;
-   
-   
-   
-}
 
-#nosotros p{
-    text-align: justify;
-    color: white;
-    margin: 6px;
-    margin-left: 100px;
-    margin-right: 100px;
-  
-    
-    padding: 10px;
-    font-size: 16px;
-    overflow: hidden;
-    
-    
-}
-#nosotros #mv p{
-    background-color: rgba(22, 33, 43, 0.493);
-    border-radius: 20px;
-    margin-left: 90px;
-    margin-right: 90px;
-    box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
-    transition: all 0.3s ease-in-out;
-}
-#nosotros #mv p:hover{
-    
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-     
-}
-
-#nosotros h3{
-
-    color: white;
-}
-#nosotros span{
-    color: #FE0000;
-    font-size: 19px;
-    font-weight: 800;
-    
-}
-#nosotros span:hover{
-    color: rgb(107, 11, 252);
-    font-style: italic;
-
-}
-.mision_vision{
-    display: flex;
-    flex-direction: row;
-    
-
-}
-.bg-video{
-   
-    height: 300px;
-    width: 300px;
-    margin-right: 50px;
-    border-radius: 150px;
-    
-} 
-@media (min-width:1600px){
-    #nosotros span{
-        color: rgb(101, 0, 252);
-        font-style: italic;
-    
-    }
-    .mision_vision{
-        display: flex;
-        flex-direction: column;
-    }
-    #nosotros #nos{
-        margin-top: 6px;
-        margin-left: 600px;
-        margin-right: 600px;
-        margin-bottom: 2px;
-    }
-    #nosotros #mv{
-        margin-top: 10px;
-        margin-left: 450px;
-        margin-right: 450px;
-    }
-    #nosotros #mv p{
-        margin-top: 10px;
-    }
-    .bg-video{
-   
-        border-radius: 150px;
-     
-        
-    } 
-}
-
-
-
-@media (max-width: 900px){
-    #nosotros #nos{
-        display: none;
-       
-    }
-    #nosotros #mv p{
-        font-size: 14px;
-        margin-top: 6px;
-        margin-left: 10px;
-        margin-right: 25px;
-        overflow: hidden;
-    }
-    #nosotros .bg-video{
-        display: none;
-    }
-}
-
-/* SETCION DE servicio */
-
-
-
-/*portafolio*/
+/*MODELOS NUEVOS*/
 #new_modelos{
     background-color: #fff;
 
@@ -435,71 +256,108 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 
-  /* SECTION DE PRODUCTOS */
-  #productos article{
-      background-position: center;
-      background-size: cover;
-      
 
-  }
 
-  #productos article:nth-child(1){
-      background-image: url('../img/producto-02.jpg');
-  }
-  
-  #productos article:nth-child(2){
-    background-image: url('../img/producto-03.jpg');
-}
+/*PROMOCIONES*/
+#promociones{
+    background-color: #fff;
 
-#productos article:nth-child(3){
-    background-image: url('../img/producto-01.jpg');
-    background-position: center;
-      background-size: cover;
-}
-#productos #slide_p .informacion-productos{
-    margin: 0 30px;
-}
-#productos #slide_p .informacion-productos .modelo{
-    font-size: 45px;
-    color: white;
-}
-#productos #slide_p .informacion-productos .descripcion{
-    font-size: 23px;
-    color: white;
-}
-
-#productos #slide_p .informacion-productos .precio{
-    font-size: 25px;
-    color: white;
-}
-#productos #slide_p .informacion-productos .precio::before{
-    content: '$';
-    display: inline-block;
 
 }
-/* CLASES DE FULLPAGE LAS FLECHAS DEL SLIDE */
 
-.fp-controlArrow.fp-next,
-.fp-controlArrow.fp-prev{
+#modelos{
     
-    top: 68%;
-    background-color: rgba(0, 0, 0, 0.493);
-    box-shadow: 0 10px 29px 0 rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
    
 }
-.fp-controlArrow.fp-prev{
-    border-width: 20px 20px 20px 0;
-    background-color: transparent #FE0000 transparent transparent;
+
+#promociones h1{
     
+    margin-bottom: 40px;
+   
+}
+#promociones h3{
+    color: #000;
+    margin-bottom: 20px;
+   
+}
+
+#modelos #elemento{
+    text-align: center;
+    
+    border-radius: 20px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 2px 0px  rgba(49, 49, 49, 0.808);
+    margin-bottom: 20px ;
+    background-color: rgba(255, 255, 255, 0.205);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  
+    
+}
+
+#modelos #elemento p{
+    overflow: hidden;
+}
+
+#modelos #elemento:hover{
+
+
+    transition: all 0.7s;
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.74);
+}
+#modelos a{
+    color: white;
+}
+
+
+#modelos img{
+    width: 350px;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+#promociones{
+    
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.432);
+    width: 100%;
+}
+@media (max-width: 1669px){
+    #modelos  .cuatro {
+        display: none;
+    }
+}
+
+@media (max-width: 1262px){
+    #modelos  .tres {
+        display: none;
+    }
+}
+
+@media (max-width: 820px){
+    #promociones{
+        width: 100%;
+        height: 500px;
+    }
+    #modelos #elemento {
+        display: none;
+    }
+}
+@media (min-width: 820px){
+    #promociones #modelos .images-section{
+        display: none;
+    }
+    #promociones #modelos .arrows{
+        display: none;
+
+    }
 
 }
-.fp-controlArrow.fp-next{
-    border-width: 20px 0 20px 20px ;
-    background-color: transparent  transparent transparent #FE0000;
-
-
-}
-
+  
 
 
 /* TIENDAS */
@@ -657,49 +515,61 @@ h1, h2, h3, h4, h5, h6 {
 
 /* REDES SOCIALES */
 footer {
-    background-image: url('../img/prueba/prueba.jpg');
-    background-position: center;
-    background-size: cover;
+    background-color: #AF0000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 footer .texto-redes{
-    color: #FE0000;
+    color: white;
     font-size: 40px;
     letter-spacing: 2px;
     margin-bottom: 40px;
 
 
 }
+footer #logo{
+    width:300px;
+	height:300px;
+	border-radius:150px;
+    
+}
+footer #info{
+    color: white;    
+}
 footer .redes-sociales{
-    display: flex;
     justify-content: center;
     margin: 0;
-    font-size: 50px;
+    font-size: 35px;
 }
 footer .redes-sociales a{
-    display:flex;
-    width: 100px;
-    height: 100px;
     background-color: #fff;
     color: #30313A;
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
-    margin: 0 20px;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 0px 20px;
 }
 footer .redes-sociales .facebook{color: #3b5998;}
 footer .redes-sociales .twitter{ color: #1da1f2; }
 footer .redes-sociales .instagram{ color: #c13584; }
+footer .redes-sociales .whatsapp{ color: #00bb2d; }
 
 
 
 footer .redes-sociales .facebook:hover{background-color: #3b5998;}
 footer .redes-sociales .twitter:hover{ background-color: #1da1f2; }
 footer .redes-sociales .instagram:hover{ background-color: #c13584; }
+footer .redes-sociales .whatsapp:hover{ background-color: #00bb2d; }
 
 footer .redes-sociales .facebook:hover{color: #fff;}
 footer .redes-sociales .twitter:hover{ color: #fff; }
 footer .redes-sociales .instagram:hover{ color: #fff; }
+footer .redes-sociales .whatsapp:hover{ color: #fff; }
+
 
 
 
