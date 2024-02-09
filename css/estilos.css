@@ -66,11 +66,13 @@ h1, h2, h3, h4, h5, h6 {
      position: fixed;
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: center;
+     /* justify-content: space-between; */
      z-index: 70;
      width: 100%;
      margin: 0;
      background-color: #fff;
+     box-shadow: 2px 2px 2px 0px  rgba(71, 71, 71, 0.808);
  }
  .navegador li,
  .navegador a{
@@ -367,63 +369,49 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('../img/iniciopreviashop.jpg');
     background-position: center;
     background-size: cover;
+
+
    
     
 }
-#tiendas h1{
-   padding-top: 50px;
+#tiendas #accordionTiendas{
+
+    margin: 0 500px ;
+
+
+    
 }
-#tiendas .container {
-        
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 0 10px 40px 10px;
-    background: rgba(22, 33, 43, 0.493);
-    box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.658);
-    transition: all 0.3s ease-in-out;
-}
-#tiendas .container h2{
-    margin-bottom: 25px;
-}
-#tiendas .container a{
+#tiendas .accordion-body .tienda i{
+
     display: inline-block;
 }
-#tiendas .container h3{
+#tiendas .accordion-body .tienda p{
+
     display: inline-block;
-    color: #fff;
+
 }
-#tiendas .container h3:hover{
-    
-    color: #FE0000;
+
+#tiendas .accordion-body .tienda p:hover{
+
+    cursor: pointer;
+
 }
-#tiendas .container{
-    margin-left: 30%;
-    margin-right: 30%;
-}
-#tiendas .fas{
-    color:#5606ce ;
-}
-#tiendas img{
-    display: inline;
-    height: 210px;
-    width: 260px;
-    position: absolute; 
-    bottom: 5px;
-    right: 20px;
-    
-    border-radius: 20px;
+
+#tiendas .accordion-body{
+
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 #tiendas #contain_mapa iframe{
-    display: inline;
-    height: 210px;
-    width: 320px;
-    position: absolute; 
-    bottom: 20px;
-    right: 35%;
-    border: solid ;
-    border-radius: 20px;
+
+
+    height: 250px;
+    width: 680px;
+    border: solid;
+    margin-left: 10%;
+
 }
 /* SESION PARA TELEFONO */
 
@@ -440,49 +428,32 @@ h1, h2, h3, h4, h5, h6 {
    
 }
 @media(max-width: 1000px){
-    #tiendas .container{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+
 
 }
-@media(max-width: 500px){
-    #tiendas .container{
-        margin-left: 20%;
-        margin-right: -55%;
-    }
+@media(max-width: 900px){
 
+    #tiendas #accordionTiendas{
+
+        margin: 0 100px ;
     
-  
-    #tiendas #slide_pc{
-        display: none;
-    }
-    #tiendas #pc #h1{
-        display: none;
+    
         
+    }
 
-    }
-    #tiendas #slide_cel{
-        display: inline;
-       }
-   
-    #tiendas #cel h1{
-        position: absolute;
-        right: 90px;
-        top: 90px;
-        
-        
-
-    }
     #tiendas #contain_mapa iframe{
-        display: inline;
-        height: 210px;
+        height: 180px;
+        width: 250px;
+        border: solid ;
+        margin-left: 30%;
+/*         display: inline;
+        height: 110px;
         width: 320px;
         position: absolute; 
         bottom: 40px;
         right: 15%;
         border: solid  ;
-        border-radius: 20px;
+        border-radius: 20px; */
     }
     
   
@@ -544,14 +515,16 @@ footer .redes-sociales{
     font-size: 35px;
 }
 footer .redes-sociales a{
-    background-color: #fff;
-    color: #30313A;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 200px;
-    padding: 10px;
-    margin: 0px 20px;
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
 }
 footer .redes-sociales .facebook{color: #3b5998;}
 footer .redes-sociales .twitter{ color: #1da1f2; }
@@ -579,13 +552,5 @@ footer .redes-sociales .whatsapp:hover{ color: #fff; }
     font-size: 20px;
 
 }
-footer .redes-sociales a{
 
-    width: 80px;
-    height: 80px;
-  
-
-    border-radius: 50px;
-    margin: 0 10px;
-}
 }

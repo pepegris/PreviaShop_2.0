@@ -14,13 +14,13 @@
 	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 
 
 	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="lib/animate/animate.min.css" rel="stylesheet">
 	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 
 
@@ -40,12 +40,12 @@
 		<a href="index.html"><img class="logo" src="../img/logos/Rocky__10_RED.png" alt=""></a>
 
 		<ul id="menu">
-			<li class="sitio"><a href="index.html">Inicio</a></li>
-			<li><a href="#nosotros" class="nsedes">Nuestras Sedes</a></li>
+			<li class="sitio"><a href="#header">Inicio</a></li>
+			<li><a href="#tiendas" class="nsedes">Nuestras Sedes</a></li>
 			<li><a href="#productos">Damas</a></li>
 			<li><a href="#productos">Caballeros</a></li>
 			<li><a href="#productos">Niños</a></li>
-			<li><a href="#productos" class="promo">¡PROMOCIONES!</a></li>
+			<li><a href="#promociones" class="promo">¡PROMOCIONES!</a></li>
 
 		</ul>
 
@@ -57,30 +57,30 @@
 
 
 		<header class="section" id="header">
-			
 
-				<div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active" id="img1">
-						 <img src="img/header/inicio.png" class="d-block w-100" alt="..."> 
-					  </div>
-					  <div class="carousel-item" id="img2">
-						 <img src="img/header/inicio2.png" class="d-block w-100" alt="..."> 
-					  </div>
-					  <div class="carousel-item" id="img3">
-						 <img src="img/header/inicio3.png" class="d-block w-100" alt="..."> 
-					  </div>
+
+			<div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" id="img1">
+						<img src="img/header/inicio.png" class="d-block w-100" alt="...">
 					</div>
-				  </div>
-
-				<!-- icono de bajar -->
-				<div class="icono">
-					<p><a href="#" class="icono_bajar" id="icono">
-							<i class="fas fa-chevron-down"></i>
-						</a>
-					</p>
+					<div class="carousel-item" id="img2">
+						<img src="img/header/inicio2.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item" id="img3">
+						<img src="img/header/inicio3.png" class="d-block w-100" alt="...">
+					</div>
 				</div>
-			
+			</div>
+
+			<!-- icono de bajar -->
+			<div class="icono">
+				<p><a href="#" class="icono_bajar" id="icono">
+						<i class="fas fa-chevron-down"></i>
+					</a>
+				</p>
+			</div>
+
 
 
 
@@ -270,8 +270,7 @@
 						<div class="info">
 							<h3>Your Article Title Goes Here</h3>
 							<p>Texto</p>
-							<a href="https://pepegris.github.io/cactus_0.5/" target="blank"
-								class="btn bg-primary">Observar</a>
+							<a href="" target="blank" class="btn bg-primary">Observar</a>
 
 						</div>
 					</div>
@@ -283,7 +282,7 @@
 						<div class="info">
 							<h3>Your Article Title Goes Here</h3>
 							<p>Texto</p>
-							<a href="https://drcareautomotriz.com/" target='blank' class="btn bg-primary">Observar</a>
+							<a href="" target='blank' class="btn bg-primary">Observar</a>
 
 						</div>
 					</div>
@@ -295,8 +294,7 @@
 						<div class="info">
 							<h3>Your Article Title Goes Here</h3>
 							<p>Texto</p>
-							<a href="https://pepegris.github.io/PreviaShop_2.0/" target="blank"
-								class="btn bg-primary">Observar</a>
+							<a href="/" target="blank" class="btn bg-primary">Observar</a>
 
 						</div>
 					</div>
@@ -322,418 +320,247 @@
 		<!--TIENDAS-->
 		<section class="section" id="tiendas">
 
-			<div class="tienda" id="pc">
-				<div class="flex">
+			<h1 class="texto-blanco">Visita Nuestras <span class="texto-rojo">Tiendas</span></h1>
+			<div class="flex">
+				<div class="accordion accordion-flush" id="accordionTiendas">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne" aria-expanded="false"
+								aria-controls="flush-collapseOne"  v-on:click="home">
+								<b> <i class="fa-solid fa-map-location-dot"></i> Falcon</b>
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
+								<div>
+									<div>
 
-					<h1 class="texto-blanco" id="h1">Visita Nuestras <span class="texto-rojo">Tiendas</span></h1>
+										<div class="tienda">
+											<i class="fas fa-store-alt"></i>
+											<p id="coro1" v-on:click="coro1">Coro 1</p>
+										</div>
+										<div class="tienda">
+											<i class="fas fa-store-alt"></i>
+											<p id="coro2" v-on:click="coro2">Coro 2</p>
+										</div>
+										<div class="tienda">
+											<i class="fas fa-store-alt"></i>
+											<p id="trina" v-on:click="trina">Coro 3</p>
+										</div>
 
+										<div class="tienda">
+											<i class="fas fa-store-alt"></i>
+											<p id="nachari" v-on:click="nachari">Coro 4</p>
+										</div>
 
+									</div>
 
-
-					<!--INICIO DE SLIDE-->
-					<article class="slide" id="slide_pc">
-						<!-- CONTENIDO -->
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<center>
-									<h2 class="texto-blanco">Región <span class="texto-lila">Central</span></h2>
-								</center>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="sabana" v-on:click="sabana">Sabana Grande</h3>
-									</a>
 								</div>
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
+							</div>
+						</div>
+					</div>
 
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="sabana_grande" v-on:click="sabana_grande">Sabana Grande 2</h3>
-									</a>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo" aria-expanded="false"
+								aria-controls="flush-collapseTwo"  v-on:click="home">
+								<b>Carabobo</b>
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
+
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="apura" v-on:click="apura">Apura</p>
+									</div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="valena" v-on:click="valena">Valencia</p>
+									</div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="catica" v-on:click="catica">Catica2</p>
+									</div>
+
 								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="turme" v-on:click="turme">Turmero</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="valena" v-on:click="valena">Valencia</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="catica" v-on:event="catica">Valencia 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="apura" v-on:click="apura">Guacara</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="kagua" v-on:click="kagua">Cagua</h3>
-									</a>
-								</div>
-
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
 
 							</div>
-							<img src="img/regincentral-130402175404-phpapp02-thumbnail-4.jpg" alt="" srcset="">
-
 						</div>
+					</div>
 
-					</article>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree" aria-expanded="false"
+								aria-controls="flush-collapseThree" v-on:click="acari">
+								<b>Portuguesa</b>
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
 
-					<!--SEGUNDO SLIDE-->
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="acari" v-on:click="acari">Acarigua</p>
+									</div>
 
-					<article class="slide" id="slide_pc">
 
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<center>
-									<h2 class="texto-blanco">Región <span class="texto-lila">Occidental</span></h2>
-								</center>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="ojena" v-on:click="ojena">Ciudad Ojena</h3>
-									</a>
 								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="pufijo" v-on:click="pufijo">Punto Fijo</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="nachari" v-on:click="nachari">Punto Fijo 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="trina" v-on:click="trina">Coro</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="corina" v-on:event="corina">Coro 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="corina2" v-on:click="corina2">Coro 3</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="acari" v-on:click="acari">Acarigua</h3>
-									</a>
-								</div>
-
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
 
 							</div>
-							<img src="img/regin-centro-occidental-1-638.jpg" alt="" srcset="">
-
 						</div>
+					</div>
 
 
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour" aria-expanded="false"
+								aria-controls="flush-collapseFour" v-on:click="puecruz" >
+								<b>Anzoategui</b>
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
 
-					</article>
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="puecruz" v-on:click="puecruz">Puerto la Cruz</p>
+									</div>
 
-					<!--TERCER SLIDE-->
 
-					<article class="slide" id="slide_pc">
-
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<center>
-									<h2 class="texto-blanco">Región <span class="texto-lila">Oriental</span></h2>
-								</center>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="puecruz" v-on:click="puecruz">Puerto la Cruz</h3>
-									</a>
 								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="matur" v-on:click="matur">Maturin</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="vallepa" v-on:click="vallepa">Valle la Pascua</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="higue" v-on:click="higue">Higuerote</h3>
-									</a>
-								</div>
-
-
-
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
 
 							</div>
-							<img src="img/regin-nor-oriental-1-638.jpg" alt="" srcset=""
-								style="height: 150px; width: 230px;">
-
 						</div>
+					</div>
+
+					
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive" aria-expanded="false"
+								aria-controls="flush-collapseFive" v-on:click="matur">
+								<b>Monagas</b>
+							</button>
+						</h2>
+						<div id="flush-collapseFive" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
+
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="matur" v-on:click="matur">Maturin</p>
+									</div>
 
 
+								</div>
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
 
-					</article>
+							</div>
+						</div>
+					</div>
 
-					<div id="contain_mapa" v-html="contenido_mapa">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseSix" aria-expanded="false"
+								aria-controls="flush-collapseSix" v-on:click="cagua">
+								<b>Aragua</b>
+							</button>
+						</h2>
+						<div id="flush-collapseSix" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
 
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="cagua" v-on:click="cagua">Cagua</p>
+									</div>
+
+
+								</div>
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseSeven" aria-expanded="false"
+								aria-controls="flush-collapseSeven" v-on:click="valle">
+								<b>Guarico</b>
+							</button>
+						</h2>
+						<div id="flush-collapseSeven" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
+
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="valle" v-on:click="valle">Valle la Pascua</p>
+									</div>
+
+
+								</div>
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseEight" aria-expanded="false"
+								aria-controls="flush-collapseEight" v-on:click="ojena">
+								<b>Zulia</b>
+							</button>
+						</h2>
+						<div id="flush-collapseEight" class="accordion-collapse collapse"
+							data-bs-parent="#accordionTiendas">
+							<div class="accordion-body">
+
+								<div>
+									<div class="tienda">
+										<i class="fas fa-store-alt"></i>
+										<p id="ojena" v-on:click="ojena">Ciudad Ojena</p>
+									</div>
+
+
+								</div>
+								<div id="contain_mapa" v-html="contenido_mapa"></div>
+
+							</div>
+						</div>
 					</div>
 
 
 				</div>
 
-
-				<!-- SESION PARA TELEFONO -->
-
-				<div class="tienda" id="cel">
-
-
-					<h1 class="texto-blanco">Visita Nuestras <span class="texto-lila">Tiendas</span></h1>
-
-
-
-
-					<!--INICIO DE SLIDE-->
-					<article class="slide" id="slide_cel">
-						<!-- CONTENIDO -->
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<center>
-									<h2 class="texto-blanco">Región <span class="texto-lila">Central</span></h2>
-								</center>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="sabana" v-on:click="sabana">Sabana Grande</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="sabana_grande" v-on:click="sabana_grande">Sabana Grande 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="turme" v-on:click="turme">Turmero</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="valena" v-on:click="valena">Valencia</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="catica" v-on:event="catica">Valencia 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="apura" v-on:click="apura">Guacara</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="kagua" v-on:click="kagua">Cagua</h3>
-									</a>
-								</div>
-
-
-							</div>
-
-						</div>
-
-					</article>
-
-					<!--SEGUNDO SLIDE-->
-
-					<article class="slide" id="slide_cel">
-
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<center>
-									<h2 class="texto-blanco">Región <span class="texto-lila">Occidental</span></h2>
-								</center>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="ojena" v-on:click="ojena">Ciudad Ojena</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="pufijo" v-on:click="pufijo">Punto Fijo</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="nachari" v-on:click="nachari">Punto Fijo 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="trina" v-on:click="trina">Coro</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="corina" v-on:event="corina">Coro 2</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="corina2" v-on:click="corina2">Coro 3</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="acari" v-on:click="acari">Acarigua</h3>
-									</a>
-								</div>
-
-
-							</div>
-
-						</div>
-
-
-
-					</article>
-
-					<!--TERCER SLIDE-->
-
-					<article class="slide" id="slide_cel">
-
-
-						<div class="container">
-
-							<div class="bloque_uno">
-								<center>
-									<h2 class="texto-blanco">Región <span class="texto-lila">Oriental</span></h2>
-								</center>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="puecruz" v-on:click="puecruz">Puerto la Cruz</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="matur" v-on:click="matur">Maturin</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="vallepa" v-on:click="vallepa">Valle la Pascua</h3>
-									</a>
-								</div>
-
-								<div class="tienda">
-									<a><i class="fas fa-store-alt"></i></a>
-									<a>
-										<h3 id="higue" v-on:click="higue">Higuerote</h3>
-									</a>
-								</div>
-
-
-
-
-							</div>
-
-
-						</div>
-
-
-
-					</article>
-
-
-
-				</div>
-
 			</div>
+
 
 
 		</section>
@@ -742,45 +569,45 @@
 
 			<div class="footer-top">
 				<div class="container">
-				  <div class="row">
-		  
-					<div class="col-lg-6 col-md-5 footer-info">
-				 
-					  <img src="img/logos/Rocky__9_WHITE.png" id="logo" alt="" srcset="" class="" >
+					<div class="row">
+
+						<div class="col-lg-6 col-md-5 footer-info">
+
+							<img src="img/logos/Rocky__9_WHITE.png" id="logo" alt="" srcset="" class="">
+						</div>
+
+
+
+						<div class="col-lg-6 col-md-6 footer-contact" id="info">
+							<h2 class="texto-blanco">Comunicate y Visita nuestras Redes</h2>
+							<strong>Dirección:</strong>
+							<p>
+								Venezuela <br>
+								Caracas<br>
+								Boleita<br>
+
+
+								<strong>Correo:</strong>@gmail.com<br>
+								<strong>Telefono:</strong><br>
+
+							</p>
+
+
+							<div class="redes-sociales">
+								<a href="https://www.facebook.com/profile.php?id=61555731246778&is_tour_dismissed=true" target="blank" class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/rockyshoes.vzla/" target="blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="#" target="blank" class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+							</div>
+
+						</div>
+
+
+
 					</div>
-		  
-				  
-		  
-					<div class="col-lg-6 col-md-6 footer-contact" id="info">
-					  <h2 >Comunicate y Visita nuestras Redes</h2>
-					  <strong>Dirección:</strong>
-					  <p>
-						Venezuela <br>
-						Caracas<br>
-						Boleita<br>
-						
-						
-						<strong>Correo:</strong>@gmail.com<br>
-						<strong>Telefono:</strong><br>
-						
-					  </p>
-					  
-		  
-					  <div class="redes-sociales">
-						<a href="" class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-						<a href="" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="" class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-		  
-					  </div>
-		  
-					</div>
-		  
-				   
-		  
-				  </div>
 				</div>
-			  </div>
-<!-- 			<div class="logo"><img src="img/logos/Rocky__9_WHITE.png" alt=""></div>
+			</div>
+			<!-- 			<div class="logo"><img src="img/logos/Rocky__9_WHITE.png" alt=""></div>
 			<div class="info">
 				<h1 class="texto-redes">SIGUENOS EN NUESTRAS REDES SOCIALES</h1>
 				<p class="redes-sociales">
