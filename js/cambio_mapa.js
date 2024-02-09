@@ -25,14 +25,15 @@ const app = new Vue({
       mapa_catica:'<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3928.1843975927786!2d-67.7826944!3d10.0839722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDA1JzAyLjMiTiA2N8KwNDYnNTcuNyJX!5e0!3m2!1ses!2sve!4v1707491839519!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       mapa_valle: '<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d984.5873154828112!2d-66.0051354!3d9.2130231!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTInNDcuNyJOIDY2wrAwMCcxNy41Ilc!5e0!3m2!1ses!2sve!4v1707491911127!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       mapa_coro2:'<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3910.9850695707605!2d-69.677606!3d11.4086296!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDI0JzMxLjkiTiA2OcKwNDAnMzkuOSJX!5e0!3m2!1ses!2sve!4v1707493334845!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-
+      mapa_nachari:'<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d976.7603087271266!2d-70.208959!3d11.6914902!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQxJzI5LjAiTiA3MMKwMTInMzEuMCJX!5e0!3m2!1ses!2sve!4v1707505632366!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+      
       //REALES  
 
       //FALTANTES
       mapa_sab: '<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.19354329809192!2d-66.87471060611895!3d10.493043535814797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5921d5f8bd0d%3A0x48ec3b547ae773bf!2sApolo%20Shoes%202!5e0!3m2!1ses!2sve!4v1593450656636!5m2!1ses!2sve" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>',
       mapa_sabana_grande:'',
       mapa_turme: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62819.626277888616!2d-67.52639344996703!3d10.24329637720832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e802155c56a4ee5%3A0xb22e37eb965185f2!2sTurmero%2C%20Aragua!5e0!3m2!1ses!2sve!4v1593465480986!5m2!1ses!2sve" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>',
-      mapa_nachari:'<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d976.7603087271266!2d-70.208959!3d11.6914902!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQxJzI5LjAiTiA3MMKwMTInMzEuMCJX!5e0!3m2!1ses!2sve!4v1707505632366!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+      
       mapa_cagua:'',
 
 
