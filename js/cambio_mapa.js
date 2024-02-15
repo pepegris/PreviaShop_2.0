@@ -27,6 +27,7 @@ const app = new Vue({
       mapa_coro2:'<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3910.9850695707605!2d-69.677606!3d11.4086296!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDI0JzMxLjkiTiA2OcKwNDAnMzkuOSJX!5e0!3m2!1ses!2sve!4v1707493334845!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       mapa_nachari:'<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d976.7603087271266!2d-70.208959!3d11.6914902!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQxJzI5LjAiTiA3MMKwMTInMzEuMCJX!5e0!3m2!1ses!2sve!4v1707505632366!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
       
+
       //REALES  
 
       //FALTANTES
