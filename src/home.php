@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel='shortcut icon' href='favicon.ico' />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Estilos personal CSS -->
-    <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="css/login/animations.css">
-    <link rel="stylesheet" href="css/login/a_estilo.css">
+    <link rel="stylesheet" href="assets/css/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/login/animations.css">
+    <link rel="stylesheet" href="assets/css/login/a_estilo.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
