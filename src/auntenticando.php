@@ -20,8 +20,6 @@ include 'includes/loading.php';
 
     $usuario = trim($_POST['user']);
     $password = trim($_POST['pass']);
-    var_dump($usuario);echo"<br>";
-    var_dump($password);echo"<br>";
 
 
 
@@ -29,6 +27,7 @@ include 'includes/loading.php';
     $sql = "SELECT * FROM usuario WHERE usuario ='$usuario'";
 
 $consulta=sqlsrv_query($conn,$sql);
+var_dump($consulta);echo"<br>";
 
 if ($consulta && sqlsrv_num_rows($consulta)==1) {
 
