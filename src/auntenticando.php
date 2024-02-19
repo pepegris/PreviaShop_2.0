@@ -27,7 +27,9 @@ include 'includes/loading.php';
     $sql = "SELECT * FROM usuario WHERE usuario ='$usuario'";
 
 $consulta=sqlsrv_query($conn,$sql);
+$nn=sqlsrv_num_rows($consulta)==1;
 var_dump($consulta);echo"<br>";
+var_dump($nn);echo"<br>";
 
 if ($consulta && sqlsrv_num_rows($consulta)==1) {
 
