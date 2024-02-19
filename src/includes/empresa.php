@@ -9,7 +9,7 @@ require 'conexion.php';
 $consulta="SELECT * FROM configuracion";
 $empresa=sqlsrv_query($conn,$consulta);
 
-$datos=sqlsrv_fetch_assoc($empresa);
+$datos=sqlsrv_fetch_array($empresa);
 
     $empresa=$datos['empresa'];
     $rif=$datos['rif'];
