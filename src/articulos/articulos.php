@@ -187,10 +187,10 @@ require '../includes/conexion.php';
         
           $tasa="SELECT tasa_dia FROM configuracion where ref=0";
           $runT=sqlsrv_query($conn,$tasa);
-          $rowT=sqlsrv_fetch_assoc($runT);
+          $rowT=sqlsrv_fetch_array($runT);
           $dolar=$rowT['tasa_dia'];   
 
-          while($rowC=sqlsrv_fetch_assoc($runC)) { 
+          while($rowC=sqlsrv_fetch_array($runC)) { 
             $campo1=$rowC['id'];
             $campo2=$rowC['co_art'];
                 $m_campo2 = ucwords($campo2); 
