@@ -32,7 +32,7 @@ $nn=sqlsrv_num_rows($consulta)==1;
 var_dump($consulta);echo"<br>";
 var_dump($nn);echo"<br>";
 
-$cifrado = sqlsrv_fetch_assoc($consulta);
+$cifrado = sqlsrv_fetch_array($consulta);
 var_dump($cifrado);echo"<br>";
 $verifica=$cifrado['clave'];
 var_dump($verifica);echo"<br>";
