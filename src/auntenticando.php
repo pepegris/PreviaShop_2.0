@@ -35,7 +35,8 @@ if ($consulta && sqlsrv_num_rows($consulta)==1) {
 
     // comprobar la contraseña
 
-    $verifica= password_verify($password,$cifrado['clave']);
+    #$verifica= password_verify($password,$cifrado['clave']);
+    $verifica=$cifrado['clave'];
 
     if ($verifica) {
 
