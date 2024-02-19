@@ -1,8 +1,3 @@
-<?php
-
-session_destroy();
-
-?>
 <!DOCTYPE HTML>
 
 <html>
@@ -36,6 +31,24 @@ session_destroy();
     #celda2 {
 
         margin-left: 10px;
+    }
+
+    a:hover {
+        border-bottom-color: transparent;
+        color: #FFFF00 !important;
+    }
+
+
+    a:active {
+        color: #FFFF00 !important;
+    }
+
+    #header .logo:hover strong {
+        background-color: #AF0000;
+    }
+
+    #header .logo:active strong {
+        background-color: #AF0000;
     }
 </style>
 
