@@ -35,8 +35,7 @@ if (isset($_POST)) {
 
         // comprobar la contraseña
         #$cifrado = sqlsrv_fetch_assoc($consulta); //ESTE ES PARA POST O MYSQL
-        #$verifica= password_verify($password,$cifrado['clave']);
-        $verifica = $cifrado['clave'];
+        $verifica= password_verify($password,$cifrado['clave']);
         if ($verifica) {
 
             echo "estoy en el IF";
