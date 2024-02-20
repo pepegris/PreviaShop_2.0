@@ -38,7 +38,8 @@
 
 require_once '../includes/menu.php';
 
-
+$carpeta = $_SERVER['DOCUMENT_ROOT'] . '/PreviaShop_2.0/src/uploads/img/';
+echo "<center>$carpeta</center>";
 ?>
 
 
