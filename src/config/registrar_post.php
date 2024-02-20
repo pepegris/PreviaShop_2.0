@@ -46,7 +46,7 @@ if (isset($_POST)) {
         if (!$guardar) {
              
          
-          $error=sqlsrv_errors($conn);
+          $error=sqlsrv_errors();
           echo "<br><center><h3>ERROR</h3></center>";
           echo "<h4>$error</h4>";
           echo "<a href='registrar.php' class='btn btn-danger'>Salir</a>";
