@@ -8,9 +8,10 @@ if (isset($_POST)) {
 
 
     
-    $tasa=isset($_POST ['tasa_dia']) ? sqlsrv_escape_string($conn,trim($_POST ['tasa_dia'])) :false;
-    $iva=isset($_POST ['iva']) ? sqlsrv_escape_string($conn,trim($_POST ['iva'])) :false;
-
+/*     $tasa=isset($_POST ['tasa_dia']) ? sqlsrv_escape_string($conn,trim($_POST ['tasa_dia'])) :false;
+    $iva=isset($_POST ['iva']) ? sqlsrv_escape_string($conn,trim($_POST ['iva'])) :false; */
+    $tasa=$_POST ['tasa_dia'];
+    $iva=$_POST ['iva'];
 
     if ($conn) {
 
@@ -28,7 +29,7 @@ if (isset($_POST)) {
 
                         if (!$guardar) {
                             
-                            $error= sqlsrv_error($conn);
+                            $error= sqlsrv_errors($conn);
                             
                             echo "<br><center><h3>ERROR</h3></center>";
                             echo "<h4>$error</h4>";   
@@ -49,7 +50,7 @@ if (isset($_POST)) {
 
                         if (!$guardar) {
                         
-                            $error=sqlsrv_last_error($conn);
+                            $error=sqlsrv_errors($conn);
                             echo "<br><center><h3>ERROR</h3></center>";
                             echo "<h4>$error</h4>";
                             echo "<a href='inicio.php' class='btn btn-danger'>Salir</a>";
