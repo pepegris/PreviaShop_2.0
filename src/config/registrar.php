@@ -94,9 +94,9 @@ require_once '../includes/menu.php';
 
 
 
-<script src="../assets/js/vue.js"></script>
-<script src="../assets/js/vue@2.6.12"></script>
-<script src="../assets/js/vue_clave.js"></script>
+<script src="../assets/js/vue/vue.js"></script>
+<script src="../assets/js/vue/vue@2.6.12"></script>
+<script src="../assets/js/vue/vue_clave.js"></script>
 
 </body>
 </html>
