@@ -194,8 +194,8 @@ require '../includes/conexion.php';
 
           $tasa = "SELECT tasa_dia FROM configuracion where ref=0";
           $runT = sqlsrv_query($conn, $tasa);
-          #$rowT=sqlsrv_fetch_array($runT);
-          $dolar = $runT;
+          $rowT=sqlsrv_fetch_array($runT);
+          $dolar=$rowT['tasa_dia'];  
 
           while ($rowC = sqlsrv_fetch_array($runC)) {
             $campo1 = $rowC['id'];
@@ -203,15 +203,15 @@ require '../includes/conexion.php';
             $m_campo2 = ucwords($campo2);
             $campo3 = $rowC['linea_des'];
             $campo4 = $rowC['ref_art'];
-/*             $total = $campo4 * $dolar;
-            $bolivares = number_format($total, 2, ',', '.'); */
+            $total = $campo4 * $dolar;
+            $bolivares = number_format($total, 2, ',', '.');
             $campo5 = $rowC['stock'];
           ?>
             <tr>
 
               <td><?php echo $m_campo2; ?></td>
               <td><?php echo $campo3; ?></td>
-              <td>Bs.<?php echo number_format($campo4 * $dolar, 2, ',', '.') ; ?></td>
+              <td>Bs.<?php echo  $bolivares; ?></td>
               <td><?php echo $campo4; ?></td>
               <td><?php echo $campo5; ?></td>
               <td>
