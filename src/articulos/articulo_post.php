@@ -30,6 +30,8 @@ if (isset($_FILES) && isset($_POST)) {
     //PONE EN MINUSCULA
     $co_art = mb_strtolower($co_art_1);
 
+    var_dump($_FILES);
+
     if ($tam_imagen <= 10000000) {
 
         if ($tipo_imagen == "image/jpeg" or $tipo_imagen == "image/jsqlsrv" or $tipo_imagen == "image/png" or $tipo_imagen == "image/gif") {
