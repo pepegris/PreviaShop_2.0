@@ -18,6 +18,7 @@ if (isset($_POST)) {
   $email = mb_strtolower($email_1);
   var_dump($email);
   var_dump($email_1);
+  var_dump($usuario);
 
 
         //validar formulario
