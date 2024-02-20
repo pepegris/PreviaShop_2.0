@@ -15,11 +15,17 @@ if (isset($_FILES) && isset($_POST)) {
 
     
 
-    $art_des=isset($_POST ['art_des']) ? sqlsrv_escape_string($conn,$_POST['art_des']):false ;
+/*     $art_des=isset($_POST ['art_des']) ? sqlsrv_escape_string($conn,$_POST['art_des']):false ;
     $co_art_1=isset ($_POST ['co_art']) ? sqlsrv_escape_string($conn,$_POST ['co_art'] ): false ;
     $ref_art=isset($_POST ['ref_art']) ? sqlsrv_escape_string($conn,trim($_POST ['ref_art'])) : false;
     $stock=isset($_POST ['stock']) ? sqlsrv_escape_string($conn,trim($_POST ['stock'])) :false;
-    $linea_des=isset($_POST ['linea_des']) ? sqlsrv_escape_string($conn,$_POST['linea_des']):false ;
+    $linea_des=isset($_POST ['linea_des']) ? sqlsrv_escape_string($conn,$_POST['linea_des']):false ; */
+
+    $art_des=$_POST ['art_des']  ;
+    $co_art_1=$_POST ['co_art'] ;
+    $ref_art=$_POST ['ref_art'] ;
+    $stock=$_POST ['stock'] ;
+    $linea_des=$_POST ['linea_des']  ;
 
     //PONE EN MINUSCULA
     $co_art=mb_strtolower($co_art_1);
@@ -30,7 +36,7 @@ if (isset($_FILES) && isset($_POST)) {
             
 
             //ruta del destino del servidor
-            $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/Proyecto_Web/log/uploads/img/';
+            $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/PreviaShop_2.0/log/uploads/img/';
 
             //almacenando nombre y direccion de la imagen
 
@@ -46,7 +52,7 @@ if (isset($_FILES) && isset($_POST)) {
 
 
                $sql= "INSERT INTO art (co_art,linea_des,ref_art,prec_vta1,prec_vta2,stock,stock2,art_des,img1,img2,img3,img4,auditoria,fecha) 
-                        VALUES ('$co_art','$linea_des',$ref_art,null,null,$stock,null,'$art_des','$art_img',null,null,null,'$cuenta_on',now())";
+                        VALUES ('$co_art','$linea_des',$ref_art,null,null,$stock,null,'$art_des','$art_img',null,null,null,'$cuenta_on',getdate())";
 
                 $guardar = sqlsrv_query($conn,$sql);
 
@@ -57,7 +63,7 @@ if (isset($_FILES) && isset($_POST)) {
 
                             //mandando mensaje de error de la base de datos
                             
-                            $error=sqlsrv_last_error($conn);
+                            $error=sqlsrv_errors($conn);
                             echo "<br><center><h3>ERROR</h3></center>";
                             echo "<h4>$error</h4>";
                     
@@ -80,7 +86,7 @@ if (isset($_FILES) && isset($_POST)) {
                 
                                 
                             echo "<a href='articulos.php' class='btn btn-danger'>Salir</a>";
-                            die("La conexión ha fallado: " . sqlsrv_connection_status($conn));
+                            die("La conexión ha fallado: " . sqlsrv_connect($conn));
             }
 
 
