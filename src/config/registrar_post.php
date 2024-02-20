@@ -8,10 +8,10 @@ if (isset($_POST)) {
     require '../includes/conexion.php';
 
   //  var_dump($_POST);
-  $usuario_1=isset($_POST ['nombre']) ;
-  $email_1=isset($_POST ['email']) ;
-  $telefono=isset($_POST ['telefono']) ;
-  $password=isset($_POST ['pass']) ;
+  $usuario_1=$_POST ['nombre'] ;
+  $email_1=$_POST ['email'] ;
+  $telefono=$_POST ['telefono'] ;
+  $password=$_POST ['pass'] ;
   
   //PONE EN MINUSCULA
   $usuario = mb_strtolower($usuario_1);
