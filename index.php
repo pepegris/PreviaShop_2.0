@@ -60,7 +60,7 @@
 
 
 
-			<?php include 'includes/new_modelos.php'; ?>
+			<?php include 'includes/carousel.php'; ?>
 
 
 
