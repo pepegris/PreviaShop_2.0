@@ -16,11 +16,6 @@ if (isset($_POST)) {
   //PONE EN MINUSCULA
   $usuario = mb_strtolower($usuario_1);
   $email = mb_strtolower($email_1);
-  var_dump($email);
-  var_dump($email_1);
-  var_dump($usuario);
-  echo "<br>";
-  echo "<$email> <$email_1> <$usuario>";
 
 
         //validar formulario
@@ -44,7 +39,7 @@ if (isset($_POST)) {
             
 
          //insertar usuario en la base de datos
-        $sql= "INSERT INTO  usuario (usuario,correo,clave,telefono,auditoria,fecha) VALUES ('$usuario','$email','$password_segura','$telefono','$cuenta_on',now())";
+        $sql= "INSERT INTO  usuario (usuario,correo,clave,telefono,auditoria,fecha) VALUES ('$usuario','$email','$password_segura','$telefono','$cuenta_on',getdate())";
  
         $guardar = sqlsrv_query($conn,$sql);
 
