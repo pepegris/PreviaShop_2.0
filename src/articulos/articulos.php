@@ -49,7 +49,10 @@ require '../includes/conexion.php';
 
 <body>
 
-
+<?php 
+$carpeta = $_SERVER['DOCUMENT_ROOT'] . '/PreviaShop_2.0/log/uploads/img/';
+echo "$carpeta";
+?>
 
   <div class="container mt-2">
     <div class="row">
