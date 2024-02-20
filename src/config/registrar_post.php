@@ -8,13 +8,14 @@ if (isset($_POST)) {
     require '../includes/conexion.php';
 
   //  var_dump($_POST);
-  $usuario_1=isset($_POST ['nombre']) ? sqlsrv_escape_string($conn,trim($_POST ['nombre'])) :false;
-  $email=isset($_POST ['email']) ? sqlsrv_escape_string($conn,trim($_POST ['email'])) :false;
-  $telefono=isset($_POST ['telefono']) ? sqlsrv_escape_string($conn,$_POST ['telefono']) : false;
-  $password=isset($_POST ['pass']) ? sqlsrv_escape_string($conn,trim($_POST ['pass'])) :false;
+  $usuario_1=isset($_POST ['nombre']) ;
+  $email_1=isset($_POST ['email']) ;
+  $telefono=isset($_POST ['telefono']) ;
+  $password=isset($_POST ['pass']) ;
   
   //PONE EN MINUSCULA
   $usuario = mb_strtolower($usuario_1);
+  $email = mb_strtolower($email_1);
 
         //validar formulario
 
@@ -45,7 +46,7 @@ if (isset($_POST)) {
         if (!$guardar) {
              
          
-          $error=sqlsrv_last_error($conn);
+          $error=sqlsrv_errors($conn);
           echo "<br><center><h3>ERROR</h3></center>";
           echo "<h4>$error</h4>";
           echo "<a href='registrar.php' class='btn btn-danger'>Salir</a>";
