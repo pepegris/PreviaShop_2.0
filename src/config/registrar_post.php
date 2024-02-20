@@ -19,6 +19,8 @@ if (isset($_POST)) {
   var_dump($email);
   var_dump($email_1);
   var_dump($usuario);
+  echo "<br>";
+  echo "<$email> <$email_1> <$usuario>";
 
 
         //validar formulario
