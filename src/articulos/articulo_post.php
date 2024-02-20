@@ -36,7 +36,8 @@ if (isset($_FILES) && isset($_POST)) {
 
 
             //ruta del destino del servidor
-            $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/php/PreviaShop_2.0/src/uploads/img/';
+            #$carpeta = $_SERVER['DOCUMENT_ROOT'] . '/php/PreviaShop_2.0/src/uploads/img/';
+            $carpeta =  "C:/inetpub/wwwroot/php/PreviaShop_2.0/src/uploads/img/";
 
             //almacenando nombre y direccion de la imagen
 
