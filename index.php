@@ -37,7 +37,7 @@
 	<nav class="navegador">
 
 
-		<a href="index.html"><img class="logo" src="../img/logos/Rocky__10_RED.png" alt=""></a>
+		<a href="index.html"><img class="logo" src="img/logos/Rocky__10_RED.png" alt=""></a>
 
 		<ul id="menu">
 			<li class="sitio"><a href="#header">Inicio</a></li>
