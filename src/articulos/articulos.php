@@ -49,10 +49,7 @@ require '../includes/conexion.php';
 
 <body>
 
-<?php 
-$carpeta = $_SERVER['DOCUMENT_ROOT'] . '/PreviaShop_2.0/log/uploads/img/';
-echo "<center>$carpeta</center>";
-?>
+
 
   <div class="container mt-2">
     <div class="row">
@@ -206,15 +203,15 @@ echo "<center>$carpeta</center>";
             $m_campo2 = ucwords($campo2);
             $campo3 = $rowC['linea_des'];
             $campo4 = $rowC['ref_art'];
-            $total = $campo4 * $dolar;
-            $bolivares = number_format($total, 2, ',', '.');
+/*             $total = $campo4 * $dolar;
+            $bolivares = number_format($total, 2, ',', '.'); */
             $campo5 = $rowC['stock'];
           ?>
             <tr>
 
               <td><?php echo $m_campo2; ?></td>
               <td><?php echo $campo3; ?></td>
-              <td>Bs.<?php echo $bolivares; ?></td>
+              <td>Bs.<?php echo number_format($campo4 * $dolar, 2, ',', '.') ; ?></td>
               <td><?php echo $campo4; ?></td>
               <td><?php echo $campo5; ?></td>
               <td>
