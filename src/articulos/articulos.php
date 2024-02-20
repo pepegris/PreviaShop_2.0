@@ -51,7 +51,7 @@ require '../includes/conexion.php';
 
 <?php 
 $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/PreviaShop_2.0/log/uploads/img/';
-echo "$carpeta";
+echo "<center>$carpeta</center>";
 ?>
 
   <div class="container mt-2">
