@@ -2,7 +2,7 @@
 
 <div id="modelos">
     <?php
-    $sql_art = "SELECT TOP 4 co_art,art_des,linea_des,ref_art,img1 FROM art ORDER BY fecha DESC   ";
+    $sql_art = "SELECT TOP 4 id,co_art,linea_des,ref_art,art_des,img1 FROM art ORDER BY fecha DESC   ";
     $consulta_art = sqlsrv_query($conn, $sql_art);
     $n = 1;
     while ($res = sqlsrv_fetch_array($consulta_art)) {
