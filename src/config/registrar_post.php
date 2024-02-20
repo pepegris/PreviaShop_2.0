@@ -16,6 +16,7 @@ if (isset($_POST)) {
   //PONE EN MINUSCULA
   $usuario = mb_strtolower($usuario_1);
   $email = mb_strtolower($email_1);
+  var_dump($email);
 
         //validar formulario
 
