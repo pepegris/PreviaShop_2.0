@@ -77,7 +77,8 @@ if (isset($_FILES) && isset($_POST)) {
                     //mover imagen a directorio temporal
                     move_uploaded_file($_FILES['imagen']['tmp_name'], $carpeta . $art_img);
                     #move_uploaded_file($_FILES['imagen']['tmp_name'], "../uploads/img/$art_img");
-                    header('refresh:1;url= articulos.php');
+                    #header('refresh:1;url= articulos.php');
+                    echo "<a href='articulos.php' class='btn btn-danger'>Salir</a>";
                     exit;
                 }
             } else {
