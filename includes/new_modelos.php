@@ -38,7 +38,7 @@
     ?>
 
         <div id="elemento" class="<?= $elemento ?>">
-            <img src="<?= $img1 ?>" alt="">
+            <img src="src/uploads/img/<?= $img1 ?>" alt="">
             <h3><?= $co_art ?></h3>
             <p><?= $linea_des ?></p>
             <br>
