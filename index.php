@@ -1,3 +1,4 @@
+<?php require 'src/includes/conexion.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
