@@ -70,11 +70,11 @@ if (isset($_FILES) && isset($_POST)) {
                 } else {
 
                     //ruta del destino del servidor
-                    #$carpeta = $_SERVER['DOCUMENT_ROOT'] . '/php/PreviaShop_2.0/src/uploads/img/';
+                    $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/php/PreviaShop_2.0/src/uploads/img/';
                     #$carpeta = $_SERVER['DOCUMENT_ROOT'] . '../uploads/img/';
                     //mover imagen a directorio temporal
-                    #move_uploaded_file($_FILES['imagen']['tmp_name'], $carpeta . $art_img);
-                    move_uploaded_file($_FILES['imagen']['tmp_name'], "../uploads/img/$art_img");
+                    move_uploaded_file($_FILES['imagen']['tmp_name'], $carpeta . $art_img);
+                    #move_uploaded_file($_FILES['imagen']['tmp_name'], "../uploads/img/$art_img");
                     header('refresh:1;url= articulos.php');
                     exit;
                 }
