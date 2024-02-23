@@ -1,7 +1,7 @@
 <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active" id="img1">
-						<img src="img/header/inicio.png" class="d-block w-100" alt="...">
+						<img src="img/header/h.png" class="d-block w-100" alt="...">
 					</div>
 					<div class="carousel-item" id="img2">
 						<img src="img/header/inicio2.png" class="d-block w-100" alt="...">
