@@ -206,6 +206,7 @@ require '../includes/conexion.php';
             $total = $campo4 * $dolar;
             $bolivares = number_format($total, 2, ',', '.');
             $campo5 = $rowC['stock'];
+
           ?>
             <tr>
 
@@ -229,7 +230,8 @@ require '../includes/conexion.php';
           <?php
 
 
-          /*           while($rowC=sqlsrv_fetch_assoc($runC)) { 
+          /*        
+             while($rowC=sqlsrv_fetch_assoc($runC)) { 
             $campo1=$rowC['id'];
             $campo2=$rowC['art_des'];
             $campo3=$rowC['co_art'];
