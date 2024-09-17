@@ -5,7 +5,6 @@ CREATE DATABASE sis_control;
 use sis_control;
 
 
-
 CREATE TABLE configuracion (
   ref INT UNIQUE,
   empresa VARCHAR(200) ,
@@ -59,9 +58,6 @@ CREATE TABLE clientes (
   auditoria VARCHAR (200) not null,
   fecha datetime NOT NULL DEFAULT CURRENT_TIMESTAMP 
 );
-
-
-
 
 
 

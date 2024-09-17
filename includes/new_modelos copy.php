@@ -10,7 +10,7 @@
                 $id=$res['id'];
                 $co_art=$res['co_art'];
                     $articulo=ucwords($co_art);
-                $linea_des=$res['linea_des'];
+                $linea_des=$res['linea_des'];-
                 $ref_art=$res['ref_art'];
                 $art_des=$res['art_des'];
                 $img1=$res['img1'];
